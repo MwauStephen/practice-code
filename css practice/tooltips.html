@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltips</title>
+    <style>
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted green;
+        }
+        .tooltip.tooltiptext{
+            visibility: visible;
+            width: 120px;
+            background-color: chartreuse;
+            color:red;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0px;
+        
+        /*position the tooltip*/
+        position:absolute;
+        z-index: 1;
+       /* bottom: 100%; positions the tooltip on top opposite for bottom set top=105%*/
+        top: -5px;/*used to place it in the middle of its container*/
+        left: 105%;/*positions the tooltip to the right*/
+        /*right: 105%; positions the tooltip to the left*/
+        }
+        /*.tooltip.tooltiptext::after{
+            content: "";
+            position: absolute;
+            top: 100%;-will place the arrow at the bottom of the tooltip
+            left:50%;-centers the arrow/to place the arrow to the right put the left=100%
+            margin-left: -5px;-keeps the arrow centered
+            border-width: 5px;-specifies the size of the arrow
+            border-style: solid;
+            border-color: black transparent transparent transparent;-transfroms the content into an arrow
+        }* adds an arrow on the tooltip*/
+        .tooltip:hover.tooltiptext{
+            visibility: visible;
+        } 
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1>right tooltip</h1>
+<div class="tooltip" >hover over me
+<span class="tooltiptext">tooltiptext</span>   
+</div> 
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background image</title>
+    <style>
+        /*the whole image covers the entire page/its afull page background image html{
+            background-image: url() no repeat center fixed;
+            background-size: cover;
+        }*/
+        .{
+            background-image: url(orsrc22903.png);
+            /*scales the background image so that the content area is completely covered by the image the alternative is contaim whic scales the image to be large as possible but covering both the width an height of the content area*/
+            background-size: cover;
+            background-size: auto;
+            object-fit: contain;
+            /*origin specifes where the image is positioned.it takes three properties:content-box,padding-box,border-box*/
+           /* background-origin:border-box;
+            /*specifies the paining area of the background*/
+            /*background-clip: ;*/
+        }
+        .hero-text{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aq">
+        <div class="hero-text">
+            <h1 style="font-size: 50px;">i am a designer by profession</h1>
+            <h3>also am a passionate programmer</h3>
+            <button>Fell free to hire me</button>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sunt iusto, minima perferendis at blanditiis laudantium eaque consequatur minus ullam?</p>
+
+    
+</body>
+</html>

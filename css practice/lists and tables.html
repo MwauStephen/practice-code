@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS LIST AND TABLES</title>
+    <style>
+        ul.a{
+            list-style-type: disc;
+            background-color: red;
+            padding: 10px;
+        }
+        ul.b{
+            list-style-position: outside;
+            background-color: blue;
+            padding: 10px;
+        }
+        ol.c{
+            list-style-image: linear-gradient();
+            background-color: crimson;
+            padding: 10px;
+        }
+        ol.d{
+            list-style-type: none;
+            background-color: darkgoldenrod;
+            padding: 14px;
+        }
+        table th,td{
+                border: 2px solid red;
+            
+            }
+            /*specifies the border around the table head and the table data of the entire table*/
+        table{
+          width: 100%;
+          border-collapse: collapse;
+          
+    
+        }/*specifies the width and the border collapse of the entire table*/
+        th{
+            height: 60px;
+        }/*specifies the table height of the entire table*/
+        td{
+
+            text-align: center;
+            vertical-align: middle;
+        }/*specifies the text alignment and the vertical alignment  inside the table data can also be applied on the table head(th)*/
+        th,td{
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid greenyellow;
+        }/*adds a space between the border and the content in the table also adds dividers to the table head and table data*/
+        tr:hover{
+            background-color: hotpink;
+
+        }/*adds a hover effect on the table rows as you move the mouse over the rows*/
+        tr:nth-child(even){
+            background-color: indigo;
+        }/*for zebra-stripped effect on the table rows*/ 
+        th{
+            background-color: lawngreen;
+            color: lightcoral;
+        }/* specifies the background color of the head and the text color of the head*/
+    </style>
+</head>
+<body>
+    /*provides a horizontal scroll bar if the screen is to small to display the full*/
+    <div style="overflow: x-auto;">
+    <h2>Lists</h2>
+    <p>examples of un ordered list</p>
+    <ul class="a">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>beer</li>
+        <li>milk</li>
+    </ul>
+    <ul class="b">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>beer</li>
+        <li>milk</li>
+    </ul>
+    <h3>Example of ordered list</h3>
+    <ol class="c">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>beer</li>
+    </ol>
+    <ol class="d">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>beer</li>
+    </ol>
+    <h2>tables with various attributes</h2>
+    <table>
+        <tr>
+            <th>First name</th>
+            <th>middle name</th>
+            <th>last name</th>
+        </tr>
+        <tr>
+            <td>STEPHEN</td>
+            <td>MWENDWA</td>
+            <td>MWAU</td>
+        </tr>
+        <tr>
+            <td>ALEX</td>
+            <td>NJOROGE</td>
+            <td>KARANJA</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>

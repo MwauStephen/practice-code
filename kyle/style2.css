@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+}
+.blog-post {
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: -1px;
+  line-height: 1.4;
+  color: #6741d9;
+}
+.date{
+
+}
+.main-text{}
+
+.container {
+}
+.other-posts {
+}
+.author-box {
+}

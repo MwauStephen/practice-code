@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0; 
+  background-color: rgba(0, 0, 0, 0.712); 
+}
+div#circle{
+    width:200px;
+    height:200px;
+    border: 15px solid #ff0000;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes circle {
+    0%{
+        border-color:#ff0000;
+        transform: scale(1);
+    }
+    25%{
+        border-color:rgb(250, 214, 9);
+        transform: scale(1.03);
+    }
+    50%{
+        border-color:limegreen;
+        transform: scale(1.1);
+    }
+    75%{
+        border-color:dodgerblue;
+        transform: scale(1.2);
+    }
+    100%{
+        border-color:green;
+        transform: scale(1);
+    }
+
+}
+div#square{
+    width: 75px;
+    height: 75px;
+    border: 5px solid lime;
+    animation-name: square;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -moz-animation-direction: alternate-reverse;
+
+}
+@keyframes square{
+  0%{
+    background-color: aqua;
+    border-width: 10px;
+  } 
+  25%{
+    background-color:coral;
+    border-width: 20px;
+} 
+50%{
+    background-color:yellow;
+    border-width: 30px;
+} 
+75%{
+    background-color: aqua;
+    border-width: 20px;
+} 
+100%{
+transform: rotate(360deg);
+border-width: 5px;
+} 
+}

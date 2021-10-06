@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text shadows</title>
+    <style>
+        h1{
+            text-shadow: 2px 2px 5px blue;
+        }
+        h2{
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        h3{
+            text-shadow:0 0 3px #FF0000,0 0 5px #0000ff;/*multiple shadows*/
+        }
+        h4{
+            color: white;
+            text-shadow:1px 1px 2px black,o 0 25px blue,0 0 5px darkblue ;
+        }
+        div{
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: #FF0000;
+            box-shadow: 10px 10px saddlebrown;
+        }
+        div.polaroid{
+            width:500px;
+            height: 500px;
+            box-shadow:100px 200px greenyellow
+            text-align: center;
+        }
+        div.container{
+            padding: 50px 50px;
+            width: flex;
+            background-color: greenyellow;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a text-shadow effect</h1>
+    <h2>This is a text-shadow effect</h2>
+    <h3>This is a text-shadow effect with mutiple shadows</h3>
+    <h4>This is a text-shadow effect</h4>
+    <br>
+    <br>
+    <div>This is a box-shadow effect with a little bit of blurness</div>
+<br>
+<br>
+    <div class="polaroid">
+        <img src='orsrc51831.jpg' alt="orsrc51831" style="width:99%">
+        <div class="container">
+        <p>my favorite image</p>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        /*@keyframes
+        animation-name
+        animation-duration-specifies how long the animation lasts
+        animation-delay
+        animation-iteration-count-specifies the number of times the animation runs
+        animation-direction--specifies if an animation should be played forward,tbackwards,alternate,alternate-reverse
+        animation-timing-function-specifies the speed curve of the animation
+        animation-fill mode-specifies a style for the target element when the animation isnt playing
+        animation(to get an animation to work,you must bind the animation to an element)*/
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: example1;
+  animation-duration: 5s;
+}
+@keyframes example1{
+    0%{background-color:blue;}
+    25%{background-color: crimson;}
+    75%{background-color: darkblue;}
+    100%{background-color: chartreuse;}
+}
+div.a{
+    width: 100px;
+    height: 100px;
+    /*border-radius: 80px;*/
+    background-color:red;
+    position: relative;
+    animation-name: example2;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes example2{
+    0%{background-color:red; left:0px; top:0px; }
+    25%{background-color: crimson; left:200px; top:0px;}
+    50%{background-color: greenyellow;left:200px;top:200px}
+    75%{background-color: darkblue;left:0px;top:200px}
+    100%{background-color: chartreuse; left:0px;top:0px}
+
+}
+div.b{
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+    background-color:hotpink;
+    position: relative;
+    animation-name: example3;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-direction: alternate-reverse;
+}
+@keyframes example3{
+    0%{background-color:hotpink; left:0px; top:0px; }
+    25%{background-color: crimson; left:200px; top:0px;}
+    50%{background-color: greenyellow;left:200px;top:200px}
+    75%{background-color: darkblue;left:0px;top:200px}
+    100%{background-color: chartreuse; left:0px;top:0px}
+}
+div.c{
+    width: 100px;
+    height: 50px;
+    /*border-radius: 80px;*/
+    background-color:rgb(243, 8, 153);
+    font-weight: bold;
+    position: relative;
+    animation-name: timefunction;
+  animation-duration: 5s;
+/*  animation-delay: 1s;*/
+  animation-iteration-count: infinite;
+}
+
+div.c{animation-timing-function: linear;}
+#div.c{animation-timing-function: ease;}
+#div.c{animation-timing-function: ease-in;}
+#div.c{animation-timing-function: ease-out;}
+div.c{animation-timing-function: ease-in-out;}
+
+@keyframes timefunction{
+0%{left: 0px;}
+100%{left:200px;}
+}
+
+</style>
+</head>
+<body>
+    <div>example1</div>
+    <br>
+    <div class="a">example2</div>
+    <h1>using the animation-direction property </h1>
+    <div class="b">example3</div>
+    <br>
+    <h2>timefunction property</h2>
+    <div class="c">linear</div>
+    <br>
+    <div class="c">ease-in</div>
+    <br>
+    <div class="c">ease-out</div>
+    <br>
+    <div class="c">ease-in-out</div>
+    <br>
+</body>

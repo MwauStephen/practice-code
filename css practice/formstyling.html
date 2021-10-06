@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form styling</title>
+    <style>
+        input[type=text],select{
+            width: 100%;
+            padding: 12px 20px;/*adds  space inisde the text field*/
+            margin: 8px 0px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: crimson;/*adds a background color on the input labels*/
+            
+        }
+        input[type=text]:focus{
+            background-color: darkblue;
+        }/*adds a background color to the text field when it gets focused(clicked on)*/
+        input[type=submit]{
+            width: 100%;
+            background-color: blue;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: chartreuse;
+
+        }/*styles the submit button according to your specification*/
+        textarea{
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid darkgoldenrod;
+            border-radius: 4px;
+            background-color: darkmagenta;
+            font-size: 16px;
+            resize: none;
+        }
+        div{
+            border-radius: 5px;
+            background-color: #ff22ff;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>styling form elements using the [attribute] selectors</h3>
+    <div>
+        <form action="#"></form>
+        <label for="fname"> First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name......">
+        
+    
+        <label for="sname"> Second Name</label>
+        <input type="text" id="sname" name="secondname" placeholder="Your name......">
+
+        
+        <label for="country"> country</label>
+        <select name="country" id="country">
+            <option value="australia">Australia</option>
+            <option value="usa">USA</option>
+            <option value="newyork">New York</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <textarea name="some text here......" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="submit">
+    </form>
+    </div>
+</body>
+</html>

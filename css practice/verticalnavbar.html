@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bars</title> 
+    <style>
+        ul.n{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        /*removes the bullets and the margins and also the padding from the list*/
+        ul.v{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        li a{
+            display: block;
+            color: crimson;
+            padding: 8px 16px;
+            text-decoration: none;
+
+        }
+        /*changes the link color on hover*/
+        li a:hover{
+            background-color: darkgreen;
+            color: darkgrey;
+        }
+        /*we  create an active class with a darkslateblue background and a white text*/
+        li a.active{
+            background-color: darkslateblue;
+            color: white;
+        }
+        /*links that are not active are displayed as darkviolet*/ 
+        li a:hover:not(a.active){
+          background-color: darkviolet;
+          color: white;
+        }
+
+       ul.m{
+           list-style-type:none;
+           margin: 0px;
+           padding: 0px;
+           width: 200px;
+           background-color: floralwhite;
+           border: 1px solid #555;
+       }
+   /*    li a.m{
+           display: block;
+           color:gold;
+           padding:8px 16px ;
+           text-decoration: none;
+       }
+       li{
+           text-align: center;
+           border-bottom: greenyellow;
+       }
+       li a.active{
+           background-color: hotpink;
+           color:white;
+       }
+       li a:hover:not(.active){
+           background-color: indigo;
+           color: white;;
+       }*/
+    </style>
+</head>
+<body>
+    <h1>Normal navigation bars</h1>
+    <ul class="n">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#why us?">Why us?</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <p>we use the # for test links </p>
+    <br>
+    <br>
+    <h2>Vertical navigation bars</h2>
+    <p>to build a navigation bar,you can style the<a> elements isnide the list,in addition to the code from the previous </p>
+        <ul class="v">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#why us?">Why us?</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+        
+        <h3>center links and add borders</h3>
+        <p>In this example we center the navigation links and add a border to the navigation bar</p>
+        <ul class="m">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#why us?">Why us?</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+        
+
+</body>
+</html>

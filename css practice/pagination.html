@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagination</title>
+    <style>
+        /*centers the pagination*/ 
+        .center{
+            text-align: center;
+        }
+        .pagination{
+            display: inline-block;
+        }
+        .pagination a{
+            color: darkblue;
+            float: left;
+            padding:8px 16px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            margin: 0px 4px;/*adds spaces between the links*/
+            font-size: 12px;
+        }
+        .pagination a.active{
+            background-color: blue;
+            color: chartreuse;
+            border-radius: 5px;
+            border: 1px solid blue;
+        }
+        .pagination a:hover:not(.active){
+            background-color: cyan;
+            border-radius: 5px;
+        }
+        ul.breadcrumb{
+            padding:8px 16px;
+            list-style: none;
+            background-color: grey;
+        }
+        ul.breadcrumb li{
+            display:inline;
+        }
+        ul.breadcrumb li+li:before{
+            padding:8px;
+            color:black;
+            content: "/\00a0";
+        }
+        ul.breadcrumb li a{color:green
+        }
+    </style>
+
+</head>
+
+<body>
+<h2>simple pagination</h2>
+<div class="center">
+<div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a  class="active" href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&laquo;</a>
+    <br>
+    <p>Next/previous navigation</p>
+    <div class="pagination">
+        <a href="#"><</a>
+        <a href="#">></a>
+
+    </div>
+</div>    
+</div>
+<h2>breadcrumbs pagination</h2>
+<ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Explore</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display attributes and overflow </title>
+    <style>
+        div.static{
+        position:static;
+        border: 2px solid red;
+
+        }
+        div.relative{
+            position: relative;;
+            left: 20px;
+        border: 2px solid red;
+
+
+        }
+        div.fixed{
+            position:fixed;
+        border: 2px solid red;
+
+        }
+        div.absolute{
+            position:absolute;
+        border: 2px solid red;
+        }
+        div.sticky{
+            position: -webkit-sticky;
+            position:sticky;
+            background-color: lightgreen;
+        border: 2px solid red;
+        }
+        div.imgovelap{
+         position: absolute;
+         left: 0px;
+         top:0px;
+         z-index: 100px;
+         /*float:right;floats the image to the right side */
+
+        }
+        /*overflow*/
+        div.visible{
+            width: 200px;
+            height:90px ;
+            background-color:red ;
+            overflow: visible;
+        }
+        div.hidden{
+            
+            width: 200px;
+            height:90px ;
+            background-color:red ;
+            overflow: hidden;
+        }
+        div.scroll{
+            
+            width: 200px;
+            height:90px ;
+            background-color:red ;
+            overflow: scroll;
+        }
+        div.auto{
+            
+            width: 200px;
+            height:90px ;
+            background-color:red ;
+            overflow: auto;
+        }
+        div.overflowxy{
+            width: 200px;
+            height:90px ;
+            background-color:lime;
+            overflow-x:hidden;
+            overflow-y: scroll;
+       
+
+        }
+    </style>
+</head>
+<body>
+    <h1>static positition</h1>
+    <div class="static">This is a static position element</div>
+    <br>
+    <h1>relative position</h1>
+    <div class="relative">This is a relative position element</div>
+    <br>
+    <h1>fixed positition</h1>
+    <div class="fixed">This is a fixed position element</div>
+    <br>
+    <h1>absolute positition</h1>
+    <div class="absolute">This is a absolute position element</div>
+    <br><br>
+    <h1>sticky positition</h1>
+    <div class="sticky">This is a sticky position element</div>
+    <br>
+    <h1>static positition</h1>
+    <img src="/UI Inspiration\00.2_know_your_world.png" alt="00.2_know_your_world">
+    <div class="imgovelap">This is a imgoverlap position element</div>
+    <br>
+    <br>
+<h2>overflow elements</h2>
+<div class="visible">this is a visiblethis content Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat totam nemo inventore a. Sit unde hic incidunt illo itaque? Sequi. </div>
+<br>
+<div class="hidden"> this content is hidden</div>
+<br>
+<div class="scroll">this is a SCROLL Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores a id sed quaerat at inventore vitae hic ab sapiente, assumenda alias nemo saepe quod quis magni dolor nisi totam voluptate.
+</div>
+<br>
+<div class="auto">this is a auto content Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio vel vitae quae suscipit sunt vero modi accusantium autem iste.</div>
+<br>
+<div class="overflowxy">this is a overflow content thaat spans as hidden in the x axis and spans scrolls in the y axis</div>
+</body>
+</html>

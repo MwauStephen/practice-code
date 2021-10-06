@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The opacity effect </title>
+    <style>
+    img{
+        opacity:0.5;
+    }
+        
+    img:hover{
+        opacity:1.0;
+    }
+   /* img{
+        opacity:1.0 ;
+    }/*the reversed order .When the mouse moves over the image tye image will be transparent*/
+    div{
+        background-color: brown;
+        padding: 10px;
+    }
+    div.first{
+        opacity: 0.1;
+    }
+    div.second{
+        opacity:0.3;
+    }
+    div.third{
+        opacity:0.6;
+    }
+    div.background{
+        background:url( 'orsrc32037.jpg'); 
+        background-repeat:repeat; 
+        background-size:cover;
+        border:2px solid red;
+    }
+    div.transbox{
+        margin:30px;
+        background-color: seashell;
+        border:1px solid black;
+        opacity:0.6;
+    }
+    div.transbox p{
+     margin: 5%;
+     font-weight: bold;
+     color:rosybrown;
+    }/*for the text inside the transbox*/
+</style>
+</head>
+<body>
+    <h1>image transparency</h1>
+<p> the opacity property specifies the transpaency of an element.The lower the value,the more transparent:</p> 
+<img src='orsrc22903.png' alt="hallowen moon" width="150" height="200">
+<br>
+<p>The opacity property is often used togehther with the <strong>hover</strong>selector to change the opacity on mouse-over</p>
+
+<img src='orsrc22903.png' alt="hallowen moon" style="width:100px;height:100px;">
+
+<h2>Tranpaency box</h2>
+<div class="first"><p>opacity 0.1</p></div>
+<div class="second"><p>opacity 0.3</p></div>
+<div class="third"><p>opacity 0.6</p></div>
+<div><p>opacity 1(default)</p></div>
+<br>
+<br>
+<h3>tranparent box</h3>
+<div class="background">
+<div class="transbox">
+   <p>This is the text palced on the transbox</p>
+</div>
+</div>
+</body>
+</html>

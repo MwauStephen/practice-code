@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal navigatione bar</title>
+    <style>
+     ul{
+         list-style: none;
+         margin: 0px;
+         padding: 0px;/*so that they can float next to each other */
+     }
+    /*inline method*/
+     li{
+        display: inline;
+        border-right: 1px solid gold;
+        
+     }
+     li:last-child{
+         border-right: none;
+         }
+     .active{
+         background-color: indigo;
+     }
+     ul.b{
+         list-style:none;
+         margin: 0px;
+         padding: 0px;
+         overflow:hidden;
+     }
+     li.b{
+         float:left;/*to make the elements slide next to each other in an inline manner*/
+     }
+     li a.b{
+         display:block;
+         padding:8px;
+         background-color:green;
+     }
+     ul.f{
+      
+         list-style-type: none;
+         margin:0px;
+         padding:0px;
+         overflow: hidden;
+         background-color: green;
+         position:fixed;
+         top: 0;/*the navgation bar will stay at the top of the page if u want it to move specify bottom value to be 0*/
+         width:100%;
+       /*  position:-webkit-sticky;
+         position: sticky;* thee navigation will become a  sticky one*/
+     }
+     li.f{
+         float:left;
+     }
+     li a.f{
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+     }
+     li a.f:hover:not(.active){
+         background-color: indianred;
+     }
+     ul.drop{
+        list-style-type: none;
+         margin:0px;
+         padding:0px;
+         overflow: hidden;
+         background-color:red;
+
+         
+     }
+     li.drop{
+         float: left;
+     }
+     li a,.dropbtn{
+         display: inline-block;
+         color: indigo;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+     }
+     li a:hover,dropdown:hover.dropbtn{
+         background-color: lawngreen;
+     }
+     li.dropdown{
+         display: inline-block;
+     }
+     .dropdown-content{
+         display: none;
+         position: absolute;
+         background-color: lightseagreen;
+         min-width: 160px;
+         box-shadow: 0px,8px,16px,0px rgba(0,0,0,0,2);
+         z-index:1;
+     }
+     .dropdown-content a{
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         text-align: left;
+     }
+     .dropdown-content a:hover{
+         background-color:slateblue;
+
+
+     }
+     dropdown:hover.dropdown-content{
+         display: block;
+     }
+
+    </style>
+</head>
+<body>
+    <p>there are two ways of creating a horizontal navigation bar<b>inline or floating</b>></p>
+    <ul>
+        <li style="float:right"><a class="active" href="#home">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#why us?">Why us?</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+   <br>
+   <br>
+   <ul class="b">
+    <li class="b"><a class="b" href="#home">Home</a></li>
+    <li class="b"><a class="b" href="#contact">Contact</a></li>
+    <li class="b"><a class ="b"href="#news">News</a></li>
+    <li class="b"><a class="b" href="#why us?">Why us?</a></li>
+    <li class="b"><a class ="b"href="#about">About</a></li>
+</ul>
+<br>
+<br>
+<h2>fixed navigation bar</h2>
+<ul class="b">
+    <li class="b"><a class="b" href="#home">Home</a></li>
+    <li class="b"><a class="b" href="#contact">Contact</a></li>
+    <li class="b"><a class ="b"href="#news">News</a></li>
+    <li class="b"><a class="b" href="#why us?">Why us?</a></li>
+    <li class="b"><a class ="b"href="#about">About</a></li>
+    </ul>
+    <h3>Drop down navigation bar</h3>
+    <ul class="drop">
+        <li class="drop"><a href="#home">Home</a></li>
+        <li class="drop"><a href="#news">News</a></li>
+        <li class="dropdown"><a href="javascript:void(0) " class="dropbtn">dropdown</a>
+        <div class="dropdown-content">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            </div>
+    </li>
+    </ul>
+</body>
+</html>
